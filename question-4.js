@@ -25,14 +25,20 @@ const betaSoftWithCompany = betaSoft.map(employee => ({
   company: "betaSoft"
 }));
 
-const allEmployees = [...alphaTechWithCompany, ...betaSoftWithCompany];
+//บริษัทที่ 3 หาย!!
+const gammaDevWithCompany = gammaDev.map(employee => ({
+  ...employee,
+  company: "gammaDev"
+}));
+
+const allEmployees = [...alphaTechWithCompany, ...betaSoftWithCompany, ...gammaDevWithCompany]; //รวมข้อมูลพนักงานจากทั้ง 3 บริษัทให้อยู่ใน Array เดียว>> เพิ่มอีกบริษัท
 
 const result = allEmployees.filter((employee) => {
-  return employee.department === 'Enginring' && employee.age >= 20;
+  return employee.department === 'Engineering' && employee.age >= 20; //สะกด Engineering ผิด
 }).map((employee) => {
   return {
     name: employee.name,
-    company: '' 
+    company: employee.company, //ต้องเพิ่มชื่อ company ของแต่ละบริษัท
   };
 });
 

@@ -10,3 +10,11 @@ const techcoolPeople = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+//รวมทั้ง 2 array ใน Array allPeople >> ...[]
+//กรองพนักงานที่มีอายุน้อยกว่า 20 >> array.filter()
+
+const allPeople = [...techupPeople, ...techcoolPeople];
+// console.log(allPeople);
+
+let lessThanTwentyPeople = allPeople.filter((people) => people.age < 20);
+console.log(lessThanTwentyPeople);
