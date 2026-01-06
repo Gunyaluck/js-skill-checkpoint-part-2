@@ -1,0 +1,5 @@
+97775f7 - MOGunyaluck - feat: answer questions 1-4
+aa57ad1 - CodePawsDev - fix: fixing initial code for question 4
+42a6b6d - Vachirawit Linkanokrat - feat: add question 4
+e203bae - CodePawsDev - Update question-1.js
+a40f5cf - napatwongchr - init js skill checkpoint 2
